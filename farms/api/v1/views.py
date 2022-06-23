@@ -138,6 +138,7 @@ def uploadFarmImage(request, pk):
     '''
     user = request.user
     farm = Farm.objects.get(id=pk)
+    print(request.FILES.get('image'))
     if farm.owner == user:
         farm.image = request.FILES.get('file')
         farm.save()
