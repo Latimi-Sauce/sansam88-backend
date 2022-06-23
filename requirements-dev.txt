@@ -10,42 +10,5 @@
 # `Pipfile.lock` and then regenerate `requirements*.txt`.
 ################################################################################
 
-attrs==21.4.0 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
-autopep8==1.6.0
-awsebcli==3.20.3
-bcrypt==3.2.2 ; python_version >= '3.6'
-blessed==1.19.1 ; python_version >= '2.7'
-botocore==1.27.15
-cached-property==1.5.2
-cement==2.8.2
-certifi==2022.6.15 ; python_version >= '3.6'
-cffi==1.15.0
-charset-normalizer==2.0.12 ; python_version >= '3.5'
-colorama==0.4.3 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
-cryptography==37.0.2 ; python_version >= '3.6'
-docker-compose==1.25.5 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
-docker[ssh]==4.4.4 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
-dockerpty==0.4.1
-docopt==0.6.2
-future==0.16.0
-idna==3.3 ; python_version >= '3.5'
-jmespath==1.0.1 ; python_version >= '3.7'
-jsonschema==3.2.0
-paramiko==2.11.0
-pathspec==0.9.0
-pycodestyle==2.8.0 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
-pycparser==2.21
-pynacl==1.5.0 ; python_version >= '3.6'
-pyrsistent==0.18.1 ; python_version >= '3.7'
-python-dateutil==2.8.2 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
-pyyaml==6.0 ; python_version >= '3.6'
-requests==2.28.0 ; python_version >= '3.7' and python_version < '4'
-semantic-version==2.8.5 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
-setuptools==62.6.0 ; python_version >= '3.7'
-six==1.16.0 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
-termcolor==1.1.0
-texttable==1.6.4
-toml==0.10.2 ; python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'
-urllib3==1.26.9 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4'
-wcwidth==0.1.9
-websocket-client==0.59.0 ; python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'
+autopep8
+awsebcli
