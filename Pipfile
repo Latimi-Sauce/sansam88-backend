@@ -58,6 +58,7 @@ pipenv-to-requirements = "*"
 [dev-packages]
 autopep8 = "*"
 awsebcli = "*"
+awscli = "*"
 
 [requires]
-python_version = "3.9"
+python_version = "3.8.5"
