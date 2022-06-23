@@ -189,7 +189,7 @@ def getCategoryList(request):
     ---
     '''
     user = request.user
-    category = Category.objects.filter(owner=user)
+    category = Category.objects.filter(owner=user).order_by("id")
     page = request.query_params.get('page')
     paginator = Paginator(category, 10)
     category = pagination(page, paginator)

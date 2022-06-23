@@ -138,7 +138,6 @@ def uploadFarmImage(request, pk):
     '''
     user = request.user
     farm = Farm.objects.get(id=pk)
-    print(request.FILES.get('image'))
     if farm.owner == user:
         farm.image = request.FILES.get('file')
         farm.save()
@@ -288,7 +287,7 @@ def getLog(request, log_pk):
     일지 pk (log_pk)를 같이 담아 보내야 합니다 
     '''
     user = request.user
-    log = Log.objects.filter(owner=user, id=log_pk)
+    log = Log.objects.filter(owner=user, id=log_pk).order_by('created')
     serializer = LogSerializer(log, many=True)
     return Response({'result': serializer.data})
 
@@ -359,7 +358,7 @@ def uploadLogImage(request, log_pk):
     user = request.user
     log = Log.objects.get(id=pk)
     if log.farm.owner == user:
-        log.image = request.FILES.get('image')
+        log.image = request.FILES.get('file')
         log.save()
         serializer = LogImageSerializer(log, many=False)
         return Response(serializer.data)
@@ -399,9 +398,7 @@ def putLog(request, log_pk):
     user = request.user
     data = request.data
     log = Log.objects.get(id=data["id"])
-    print(log.id)
     farm = log.farm
-    print(data)
     if farm.owner == user:
         log.title = data['title']
         log.content = data["content"]
