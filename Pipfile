@@ -21,6 +21,8 @@ dj-database-url = "*"
 graphviz = "*"
 django-storages = "*"
 django-dotenv = "*"
+botocore = "*"
+boto3 = "*"
 
 [dev-packages]
 autopep8 = "*"
